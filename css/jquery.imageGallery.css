@@ -1,0 +1,46 @@
+.btn-file >input {
+    cursor: pointer;
+    direction: ltr;
+    font-size: 23px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-300px, 0px) scale(4);
+}
+.btn-file{-webkit-border-radius:0 3px 3px 0;-moz-border-radius:0 3px 3px 0;border-radius:0 3px 3px 0;}
+.btn-file{overflow:hidden;position:relative;margin: 0 0 0 50px;vertical-align:middle;}
+
+ol.toolbar{
+    position:absolute;
+    width:205px;
+    height:30px;
+    margin:0;
+    padding:5px 0 0 0;
+    background-color: #e6f1ff;
+    border-bottom:2px solid #ccc;
+    list-style-type:none;
+    opacity: 0.8;
+}
+ol.toolbar li{
+    margin:10px 0 0 0;
+    display:inline;
+}
+
+ol.toolbar li a{
+    cursor:pointer;
+}
+ol.toolbar li a:hover{
+    opacity: 1.0;
+}
+
+ul.thumbnails  li.image-deleted{
+    /*position:relative;*/
+    background: url('../image/deleted.png') no-repeat right top rgba(255,255,255,0.5);
+    box-shadow:0 0 4px rgba( 0, 255, 128,0.3) inset,0 -3px 2px rgba( 0, 255, 128,0.1);
+}
+
+ul.thumbnails li.image-deleted img{
+    opacity: 0.4;
+}

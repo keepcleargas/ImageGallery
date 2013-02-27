@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" xmlns="http://www.w3.org/1999/html">
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link href="../css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="../css/jquery.imageGallery.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.imageGallery.js"></script>
+</head>
+<body>
+<legend>多图片上传&图片画廊功能实践</legend>
+<form class="form-horizontal" id="feed-form"
+      enctype="multipart/form-data">
+    <div>
+     <span class="btn btn-file"><span>添加图片</span>
+                <input type="file" name="files[0]" class="input-file current" multiple>
+     </span>
+    </div>
+</form>
+<div class="pear-line"></div>
+<div id="image-gallery" class="row-fluid gallery">
+    <ul class="thumbnails">
+    </ul>
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.btn-file').imageGallery();
+    });
+</script>
